@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.home-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(25,25,25,0.5), rgba(25,25,25,0.5)), url(images/mountain.jpg);
+    background-position: 0px -200px;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2.5% 7%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    width: 50px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.icon-links{
+    text-align: right;
+}
+.icon-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.icon-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    
+}
+
+/* about page */
+
+.about-header{
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2.5% 7%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    width: 50px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+.about-nav-links{
+    flex: 1;
+    text-align: left;
+
+}
+.about-nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.about-nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.about-nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.about-nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.about-icon-links{
+    text-align: right;
+}
+.about-icon-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.about-icon-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+}
+
+.about{
+    
+    padding: 2.5% 7%;
+    margin: auto;
+    text-align: left;
+    padding-top: 25px;
+}
+h1.about{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+.about-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    width: 50%;
+    margin-bottom: 50px;
+    padding-top: 300px;
+    position: relative;
+}
+.about-pic-col{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.about-pic-col img{
+    width: 100%;
+    display: flex;
+}
+p{
+    font-size: 15px;
+    padding: 25px 12px;
+}
+
+/* recents */
+
+.recents{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic-col{
+    flex-basis: 30%;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.pic-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(255, 255, 255, .25);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 50%;
+    left: 0%;
+    position: absolute;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.icons .fa{
+    color:#000;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 18px 0;
+}
