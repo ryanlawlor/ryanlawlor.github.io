@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .home-header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(25,25,25,0.5), rgba(25,25,25,0.5)), url(images/mountain.jpg);
+    background-image: linear-gradient(rgba(25,25,25,0.3), rgba(25,25,25,0.3)), url(images/mountain.jpg);
     background-position: 0px -200px;
     background-size: cover;
     position: relative;
@@ -41,7 +42,7 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: medium;
     
 }
 
@@ -70,7 +71,7 @@ nav img{
 .icon-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
     
 }
 
@@ -111,7 +112,7 @@ nav img{
 .about-nav-links ul li a{
     color: #000;
     text-decoration: none;
-    font-size: 13px;
+    font-size: medium;
     
 }
 .about-nav-links ul li::after{
@@ -139,7 +140,7 @@ nav img{
 .about-icon-links ul li a{
     color: #000;
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
 }
 
 .about{
@@ -179,13 +180,13 @@ p{
     padding: 25px 12px;
 }
 
-/* recents */
+/* photography */
 
-.recents{
+.photography{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 75px;
 }
 h1{
     font-size: 42px;
@@ -200,7 +201,7 @@ h1{
 
 .pic-col{
     flex-basis: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     position: relative;
     overflow: hidden;
 }
@@ -230,16 +231,76 @@ h1{
     position: absolute;
 }
 
+/* music section */
+
+.music{
+    width: 100%;
+    padding: 5% 10%;
+    margin: auto;
+    text-align: left;
+    background-color: #222;
+}
+h1.music{
+    font-size: 42px;
+    font-weight: 600;
+    padding: 8px 12px;
+    color: white;
+}
+p.music{
+    color: white;
+    padding: 25px 12px;
+}
+.music-row{
+    display: flex;
+    justify-content: space-between;
+}
+.music-col-left{
+    width: 40%;
+}
+.music-col-right{
+    width: 60%;
+    text-align: center;
+}
+.soundcloud-desc{
+    padding-bottom: 25px;
+}
+
+.soundcloud-desc:last-of-type {
+    padding-bottom: 0;
+}
+
+/* Photos Sections */
+
+.photos{
+    width: 90%;
+    margin: auto;
+}
+.photo-row{
+    display: flex;
+    justify-content: space-between;
+}
+.photo-col{
+    width: 31%;
+}
+.photo-col img{
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+}
+
 /* FOOTER */
 
 .footer{
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 .icons .fa{
     color:#000;
     margin: 0 5px;
     cursor: pointer;
     padding: 18px 0;
+    font-size: larger;
 }
