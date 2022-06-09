@@ -7,10 +7,12 @@
 .home-header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(25,25,25,0.3), rgba(25,25,25,0.3)), url(images/mountain.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/mountain.jpg);
     background-position: 0px -200px;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     position: relative;
+    
 }
 nav{
     display: flex;
@@ -20,47 +22,49 @@ nav{
     position: relative;
 }
 nav img{
-    width: 50px;
+    width: 1000px;
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: white;
 }
 .nav-links{
     flex: 1;
-    text-align: left;
-
 }
-.nav-links ul li{
+.page-links{
+    flex: 1;
+    text-align: left;
+    display: inline-block;
+}
+.page-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
-    color: #fff;
+.page-links ul li a{
+    color: white;
     text-decoration: none;
     font-size: medium;
-    
 }
-
-.nav-links ul li::after{
+.page-links ul li::after{
     content: '';
     width: 0%;
     height: 1px;
-    background: #fff;
+    background: white;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+.page-links ul li:hover::after{
     width: 100%;
 }
 
 .icon-links{
     text-align: right;
+    float: right;
 }
 .icon-links ul li{
     list-style: none;
@@ -69,7 +73,7 @@ nav img{
     position: relative;
 }
 .icon-links ul li a{
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: x-large;
     
@@ -183,7 +187,7 @@ p{
 /* photography */
 
 .photography{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 75px;
@@ -288,6 +292,305 @@ p.music{
     margin-top: 10%;
 }
 
+/* contact page */
+
+.contact-header{
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(55, 55, 58);
+}
+nav{
+    display: flex;
+    padding: 2.5% 7%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    width: 50px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.contact-nav-links{
+    flex: 1;
+    text-align: left;
+
+}
+.contact-nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.contact-nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    
+}
+.contact-nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.contact-nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.contact-icon-links{
+    text-align: right;
+}
+.contact-icon-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.contact-icon-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.contact{
+    
+    padding: 5% 7%;
+    margin: auto;
+    text-align: left;
+    padding-top: 25px;
+    background-color: rgb(55, 55, 58);
+}
+h1.contact{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 8px 12px 35px;
+    color: white;
+}
+.contact-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-col{
+    width: 50%;
+    margin-bottom: 20px;
+    /* padding-top: 300px; */
+    position: relative;
+}
+.contact-pic-col{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.contact-pic-col img{
+    width: 100%;
+    display: flex;
+}
+p.contact{
+    font-size: 14px;
+    padding: 8px 12px;
+    color: white;
+}
+.contact-icons{
+    padding: 25px 8px;
+}
+.contact-icons .fa{
+    color:white;
+    cursor: pointer;
+    padding: 0px 4px;
+    font-size: x-large;
+}
+.contact-container {
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: transparent;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 12px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+}
+input[type=submit]:hover {
+    background-color: lightgrey;
+    color: white;
+    transition: 0.25s;
+}
+.name-text-box{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    resize: vertical;
+    margin-bottom: 0px;
+}
+.name-text{
+    display: inline-block;
+    font-size: x-small;
+    padding-bottom: 16px;
+    padding-top: 0px;
+}
+.name-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name-col{
+    width: 49%;
+}
+label {
+    color: white;
+    font-size: small;
+    display: block;
+    padding-top: 12px;
+}
+
+/* contact on main page */
+
+.home-contact{
+    
+    padding: 5% 7%;
+    margin: auto;
+    text-align: left;
+    padding-top: 25px;
+    background-color: white;
+}
+h1.home-contact{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 8px 12px 35px;
+    color: black;
+}
+.contact-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-col{
+    width: 50%;
+    margin-bottom: 20px;
+    /* padding-top: 300px; */
+    position: relative;
+}
+.contact-pic-col{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+}
+.contact-pic-col img{
+    width: 100%;
+    display: flex;
+}
+p.home-contact{
+    font-size: 14px;
+    padding: 8px 12px;
+    color: black;
+}
+.home-contact-icons{
+    padding: 25px 8px;
+}
+.home-contact-icons .fa{
+    color:black;
+    cursor: pointer;
+    padding: 0px 4px;
+    font-size: x-large;
+}
+.contact-container {
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    resize: vertical;
+}
+input[type=text]:focus, textarea:focus {
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
+input[type=home-submit] {
+    background-color: transparent;
+    border: 2px solid grey;
+    color: grey;
+    padding: 12px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+    text-align: center;
+}
+input[type=home-submit]:hover {
+    background-color: grey;
+    color: white;
+    transition: 0.25s;
+}
+.name-text-box{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    resize: vertical;
+    margin-bottom: 0px;
+}
+.name-text-box:focus{
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
+.home-name-text{
+    display: inline-block;
+    font-size: x-small;
+    padding-bottom: 16px;
+    padding-top: 0px;
+    color: black;
+}
+.name-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name-col{
+    width: 49%;
+}
+.home-contact-label {
+    color: black;
+    font-size: small;
+    display: block;
+    padding-top: 12px;
+}
+
 /* FOOTER */
 
 .footer{
@@ -303,4 +606,40 @@ p.music{
     cursor: pointer;
     padding: 18px 0;
     font-size: larger;
+}
+
+/* nav .fa{
+    display: none;
+} */
+
+@media(max-width: 700px){
+    .home-header{
+        background-position: -100px 0px;
+    }
+    .nav-links ul li{
+        display: block;
+        padding: 5% 0;
+    }
+    .nav-links ul li a{
+        color: black;
+        font-size: xx-large;
+    }
+    .icon-links ul li a{
+        color: black;
+        font-size: xx-large;
+    }
+    .nav-links{
+        position: absolute;
+        background: white;
+        opacity: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 2;
+    }
+    .page-links{
+        top: 50vh;
+    }
 }
