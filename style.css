@@ -158,6 +158,7 @@ h1.about{
     font-size: 30px;
     font-weight: 600;
     padding: 8px 12px;
+    padding-bottom: 25px;
 }
 .about-row{
     margin-top: 5%;
@@ -180,8 +181,10 @@ h1.about{
     display: flex;
 }
 p{
-    font-size: 15px;
-    padding: 25px 12px;
+    font-size: 14px;
+    padding: 8px 12px;
+    padding-right: 100px;
+    line-height: 1.75;
 }
 
 /* photography */
