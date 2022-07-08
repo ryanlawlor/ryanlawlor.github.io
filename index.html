@@ -16,9 +16,14 @@
 
     <section class="home-header">
         <nav>
-            <a href="index.html"><img src="images/logo2.png"></a>
-            <!-- <i class="fa fa-times"></i> -->
-            <div class="nav-links">
+            <a class="main-logo" href="index.html"><img src="images/logo2.png"></a>
+            <!-- <div class="menu-show" id="menu-show">
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </div> -->
+            <div class="nav-links" id="nav-links">
+                <!-- <div class="menu-collapse" id="menu-collapse">
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </div> -->
                 <div class="page-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -37,7 +42,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- <i class="fa fa-bars"></i> -->
         </nav>
     </section>
 
@@ -80,7 +84,8 @@
         <div class="music-row">
             <div class="music-col-left">
                 <h1 class="music">Music</h1>
-                <p class="music">I like to make music too :)</p>
+                <p class="music">I like to make music too :) </p>
+                <p class="music">Check it out here!</p>
             </div>
             <div class="music-col-right">
                 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1036525825&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div class="soundcloud-desc" style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/musicbyryn" title="RYN" target="_blank" style="color: #cccccc; text-decoration: none;">RYN</a> · <a href="https://soundcloud.com/musicbyryn/seeb-last-dance-feat-kiddo-ryan-remix" title="Seeb - Last Dance Feat. Kiddo (RYN Remix)" target="_blank" style="color: #cccccc; text-decoration: none;">Seeb - Last Dance Feat. Kiddo (RYN Remix)</a></div>
@@ -110,7 +115,7 @@
                 <div class="contact-container">
                     <form action="action_page.php">
                   
-                        <label class="home-contact-label" for="name">Name</label>
+                        <label class="home-contact-label" for="name">Name *</label>
 
                         <div class="name-row">
                             <div class="name-col">
@@ -124,10 +129,10 @@
                         </div>
                         
                   
-                        <label class="home-contact-label" for="email">Email</label>
+                        <label class="home-contact-label" for="email">Email *</label>
                         <input type="text" id="email" name="email">
                   
-                        <label class="home-contact-label" for="message">Message</label>
+                        <label class="home-contact-label" for="message">Message *</label>
                         <textarea id="subject" name="subject" style="height:100px"></textarea>
                   
                         <input type="home-submit" value="Send">
@@ -149,6 +154,32 @@
             <a href="mailto:rlawlor125@gmail.com"><i class="fa fa-envelope"></i></a>
         </div>
     </section>
+
+    <!-- <script>
+
+        var navLinks = document.getElementById("nav-links");
+        var menuCollapse = document.getElementById("menu-collapse")
+        var menuShow = document.getElementById("menu-show")
+
+        // navLinks.style.opacity = 0;
+        console.log(navLinks.style.opacity)
+
+        function showmenu(){
+            console.log("showing");
+            menuCollapse.style.display = "block";
+            menuShow.style.display = "none";
+            navLinks.style.display = "block";
+            navLinks.style.opacity = 100;
+        }
+        function closemenu(){
+            console.log("closing");
+            menuCollapse.style.display = "none";
+            menuShow.style.display = "block";
+            navLinks.style.display = "none";
+            navLinks.style.opacity = 0;
+        }
+
+    </script> -->
 
 </body>
 </html>
